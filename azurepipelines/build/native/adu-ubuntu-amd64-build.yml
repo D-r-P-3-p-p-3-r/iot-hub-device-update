@@ -1,3 +1,8 @@
+parameters:
+  - name: codeqlCadence
+    default: 72
+    displayName: "CodeQL Cadence"
+    
 variables:
     version.major: 1
     version.minor: 1
@@ -20,6 +25,8 @@ variables:
     # gcc-8 matches what is built with poky warrior.
     CC: gcc-8
     CXX: g++-8
+    # Overriding Codeql cadence
+    Codeql.Cadence: ${{ parameters.codeqlCadence }}
 
 name: $(version.major).$(version.minor).$(version.patch)-$(version.pre-release)+$(version.build)
 

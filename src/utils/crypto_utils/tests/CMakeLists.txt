@@ -7,7 +7,7 @@ include (agentRules)
 compileasc99 ()
 disablertti ()
 
-set (sources main.cpp crypto_utils_ut.cpp)
+set (sources crypto_utils_ut.cpp)
 
 find_package (Catch2 REQUIRED)
 find_package (OpenSSL REQUIRED)
@@ -15,7 +15,7 @@ find_package (OpenSSL REQUIRED)
 add_executable (${PROJECT_NAME} ${sources})
 
 target_link_libraries (${PROJECT_NAME} PRIVATE aduc::crypto_utils aduc::root_key_utils
-                                               aduc::string_utils Catch2::Catch2 OpenSSL::Crypto)
+                                               aduc::string_utils Catch2::Catch2WithMain OpenSSL::Crypto)
 
 include (CTest)
 include (Catch)

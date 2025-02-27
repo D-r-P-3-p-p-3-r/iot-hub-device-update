@@ -9,7 +9,7 @@ find_package (Parson REQUIRED)
 
 add_executable (${target_name})
 
-target_sources (${target_name} PRIVATE src/main.cpp src/extension_manager_ut.cpp
+target_sources (${target_name} PRIVATE src/extension_manager_ut.cpp
                                        src/extension_manager_download_test_case.cpp)
 
 target_include_directories (${target_name} PUBLIC inc ${ADUC_EXPORT_INCLUDES}
@@ -24,7 +24,7 @@ target_link_libraries (
             aduc::system_utils
             aduc::test_utils
             aduc::workflow_utils
-            Catch2::Catch2
+            Catch2::Catch2WithMain
             Parson::parson)
 
 # Windows needs all EXEs to have links to all potential libraries so this is included here

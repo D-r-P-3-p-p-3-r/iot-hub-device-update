@@ -13,7 +13,7 @@ add_executable (${PROJECT_NAME} "")
 
 target_include_directories (${PROJECT_NAME} PRIVATE ${ADUC_EXPORT_INCLUDES})
 
-target_sources (${PROJECT_NAME} PRIVATE main.cpp installed_criteria_utils_ut.cpp)
+target_sources (${PROJECT_NAME} PRIVATE installed_criteria_utils_ut.cpp)
 
 # Windows needs all EXEs to have links to all potential libraries so this is included here
 if (WIN32)
@@ -26,7 +26,7 @@ target_compile_definitions (
 
 target_link_libraries (
     ${PROJECT_NAME} PRIVATE aduc::adu_core_interface aduc::installed_criteria_utils
-                            aduc::platform_layer Catch2::Catch2)
+                            aduc::platform_layer Catch2::Catch2WithMain)
 
 # Ensure that ctest discovers catch2 tests.
 # Use catch_discover_tests() rather than add_test()

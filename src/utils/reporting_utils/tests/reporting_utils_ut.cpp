@@ -5,7 +5,7 @@
  * @copyright Copyright (c) Microsoft Corporation.
  * Licensed under the MIT License.
  */
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 using Catch::Matchers::Equals;
 #include <aduc/reporting_utils.h>
 #include <aduc/string_handle_wrapper.hpp>

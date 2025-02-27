@@ -8,7 +8,7 @@
 
 #include "aduc/adu_core_exports.h"
 #include "aduc/installed_criteria_utils.hpp"
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 
 class InstalledCriteriaPersistence  // NOLINT
 {

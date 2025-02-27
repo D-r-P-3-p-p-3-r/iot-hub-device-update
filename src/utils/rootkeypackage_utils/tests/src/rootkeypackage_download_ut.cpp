@@ -10,7 +10,7 @@
 #include <aduc/rootkeypackage_utils.h>
 #include <aduc/system_utils.h>
 #include <azure_c_shared_utility/strings.h>
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 #include <fstream>
 #include <sstream>
 

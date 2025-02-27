@@ -8,7 +8,7 @@
 
 #include <aduc/url_utils.h>
 
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 using Catch::Matchers::Equals;
 
 TEST_CASE("ADUC_UrlUtils_GetPathFileName - non empty file and intermediate path segments")

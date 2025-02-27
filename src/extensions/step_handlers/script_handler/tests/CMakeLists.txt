@@ -7,7 +7,7 @@ include (agentRules)
 compileasc99 ()
 disablertti ()
 
-set (sources main.cpp script_handler_ut.cpp ../src/script_handler.cpp
+set (sources script_handler_ut.cpp ../src/script_handler.cpp
              ../../../update_manifest_handlers/steps_handler/src/steps_handler.cpp)
 
 add_executable (${PROJECT_NAME} ${sources})
@@ -45,7 +45,7 @@ target_link_libraries (
             aduc::system_utils
             aduc::workflow_data_utils
             aduc::workflow_utils
-            Catch2::Catch2)
+            Catch2::Catch2WithMain)
 
 target_link_libraries (${PROJECT_NAME} PRIVATE libaducpal)
 

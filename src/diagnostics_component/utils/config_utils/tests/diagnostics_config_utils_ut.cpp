@@ -10,7 +10,7 @@
 
 #include <azure_c_shared_utility/strings.h>
 #include <azure_c_shared_utility/vector.h>
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 #include <iostream>
 #include <parson.h>
 #include <sstream>

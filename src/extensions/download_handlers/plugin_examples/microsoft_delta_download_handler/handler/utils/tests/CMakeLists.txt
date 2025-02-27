@@ -9,7 +9,7 @@ find_package (Catch2 REQUIRED)
 
 add_executable (${PROJECT_NAME} "")
 
-target_sources (${PROJECT_NAME} PRIVATE main.cpp microsoft_delta_download_handler_utils_ut.cpp)
+target_sources (${PROJECT_NAME} PRIVATE microsoft_delta_download_handler_utils_ut.cpp)
 
 target_link_libraries (
     ${PROJECT_NAME}
@@ -17,7 +17,7 @@ target_link_libraries (
             aduc::microsoft_delta_download_handler_utils
             aduc::parser_utils
             aduc::workflow_utils
-            Catch2::Catch2)
+            Catch2::Catch2WithMain)
 
 include (CTest)
 include (Catch)

@@ -13,7 +13,7 @@
 #include <aduc/rootkeypackage_utils.h>
 #include <algorithm>
 #include <base64_utils.h>
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 #include <parson.h>
 #include <regex>
 #include <sstream>

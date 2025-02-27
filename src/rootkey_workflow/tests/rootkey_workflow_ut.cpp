@@ -9,7 +9,7 @@
 #include "aduc/rootkey_workflow.h" // RootKeyWorkflow_UpdateRootKeys
 #include <aduc/c_utils.h>
 #include <aduc/result.h>
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 #include <root_key_util.h> // RootKeyUtility_GetReportingErc
 
 using Catch::Matchers::Equals;

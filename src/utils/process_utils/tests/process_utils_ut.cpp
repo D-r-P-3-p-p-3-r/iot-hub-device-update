@@ -7,17 +7,17 @@
  */
 #include <azure_c_shared_utility/strings.h>
 #include <azure_c_shared_utility/vector.h>
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 
 #include "aduc/process_utils.hpp" // ADUC_LaunchChildProcess
 
 #include <vector>
 
-using Catch::Matchers::Contains;
+using Catch::Matchers::ContainsSubstring;
 
 const char* command = "process_utils_tests_helper";
 
-TEST_CASE("Capture exit status", "[!hide][functional_test]")
+TEST_CASE("Capture exit status", "[.hide][functional_test]")
 {
     std::vector<std::string> args;
     args.emplace_back("-e");
@@ -40,7 +40,7 @@ TEST_CASE("apt-get fail")
     REQUIRE(exitCode != EXIT_SUCCESS);
 }
 
-TEST_CASE("Capture standard output", "[!hide][functional_test]")
+TEST_CASE("Capture standard output", "[.hide][functional_test]")
 {
     std::vector<std::string> args;
     args.emplace_back("-o");
@@ -48,10 +48,10 @@ TEST_CASE("Capture standard output", "[!hide][functional_test]")
     std::string output;
     ADUC_LaunchChildProcess(command, args, output);
 
-    CHECK_THAT(output.c_str(), Contains("This is a normal output string.\n"));
+    CHECK_THAT(output.c_str(), ContainsSubstring("This is a normal output string.\n"));
 }
 
-TEST_CASE("Capture standard error", "[!hide][functional_test]")
+TEST_CASE("Capture standard error", "[.hide][functional_test]")
 {
     std::vector<std::string> args;
     args.emplace_back("-e");
@@ -59,7 +59,7 @@ TEST_CASE("Capture standard error", "[!hide][functional_test]")
     std::string output;
     ADUC_LaunchChildProcess(command, args, output);
 
-    CHECK_THAT(output.c_str(), Contains("This is a standard error string.\n"));
+    CHECK_THAT(output.c_str(), ContainsSubstring("This is a standard error string.\n"));
 }
 
 TEST_CASE("Bad parameter error")
@@ -78,7 +78,7 @@ TEST_CASE("Bad parameter error")
     REQUIRE(exitCode != EXIT_SUCCESS);
 
     // Expecting output text to contain the specified bogus option.
-    CHECK_THAT(output.c_str(), Contains(bogusOption));
+    CHECK_THAT(output.c_str(), ContainsSubstring(bogusOption));
 }
 
 TEST_CASE("VerifyProcessEffectiveGroup")

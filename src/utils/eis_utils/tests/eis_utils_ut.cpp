@@ -10,7 +10,7 @@
 #include <aduc/adu_types.h>
 #include <aduc/c_utils.h>
 #include <azure_c_shared_utility/crt_abstractions.h>
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 #include <cstring>
 #include <iostream>
 #include <sstream>

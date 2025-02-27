@@ -9,7 +9,7 @@
 #include "root_key_util.h"
 #include <aduc/string_handle_wrapper.hpp>
 #include <azure_c_shared_utility/constbuffer.h>
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 
 using Catch::Matchers::Equals;
 

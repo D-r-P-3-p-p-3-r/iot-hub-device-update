@@ -11,7 +11,7 @@
 #include "root_key_util.h"
 #include <aduc/calloc_wrapper.hpp>
 #include <array>
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 #include <cstring>
 
 TEST_CASE("Base64 Encoding")

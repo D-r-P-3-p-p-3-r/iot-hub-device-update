@@ -11,7 +11,7 @@ include (agentRules)
 compileasc99 ()
 disablertti ()
 
-set (sources main.cpp apt_parser_ut.cpp ../src/apt_handler.cpp ../src/apt_parser.cpp)
+set (sources apt_parser_ut.cpp ../src/apt_handler.cpp ../src/apt_parser.cpp)
 
 find_package (Catch2 REQUIRED)
 
@@ -41,7 +41,7 @@ target_link_libraries (
             aduc::system_utils
             aduc::workflow_data_utils
             aduc::workflow_utils
-            Catch2::Catch2)
+            Catch2::Catch2WithMain)
 
 target_link_libraries (${PROJECT_NAME} PRIVATE libaducpal)
 

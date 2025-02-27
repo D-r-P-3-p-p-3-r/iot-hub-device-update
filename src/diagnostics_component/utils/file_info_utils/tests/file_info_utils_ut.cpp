@@ -9,7 +9,7 @@
 
 #include <aduc/c_utils.h>
 #include <aduc/calloc_wrapper.hpp>
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 #include <ctime>
 #include <time.h>
 #include <umock_c/umock_c.h>

@@ -10,7 +10,7 @@
 #include <aduc/path_utils.h>
 #include <aduc/string_handle_wrapper.hpp>
 #include <azure_c_shared_utility/strings.h>
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 using ADUC::StringUtils::cstr_wrapper;
 using ADUC::StringUtils::STRING_HANDLE_wrapper;
 using Catch::Matchers::Equals;

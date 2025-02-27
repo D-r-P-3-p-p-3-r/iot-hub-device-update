@@ -6,10 +6,10 @@
  * Licensed under the MIT License.
  */
 // https://github.com/catchorg/Catch2/blob/master/docs/own-main.md
-#define CATCH_CONFIG_RUNNER
-#include <catch2/catch.hpp>
+#include <catch2/catch_session.hpp>
 
 #include <ostream>
+#include <iostream>
 
 int main(int argc, char* argv[])
 {

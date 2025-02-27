@@ -13,7 +13,7 @@
 #include "aduc/system_utils.h"
 #include "aduc/workflow_utils.h"
 
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 using Catch::Matchers::Equals;
 
 #include <sstream>
@@ -418,7 +418,7 @@ TEST_CASE("SWUpdate sample script --action-download")
     ADUC_ConfigInfo_ReleaseInstance(config);
 }
 
-TEST_CASE("SWUpdate sample script --action-install", "[!hide][functional_test]")
+TEST_CASE("SWUpdate sample script --action-install", "[.hide][functional_test]")
 {
     set_test_config_folder();
     const ADUC_ConfigInfo* config = ADUC_ConfigInfo_GetInstance();

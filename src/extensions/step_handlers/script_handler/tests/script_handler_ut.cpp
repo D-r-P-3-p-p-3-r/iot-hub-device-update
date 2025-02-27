@@ -14,7 +14,7 @@
 #include "aduc/workflow_utils.h"
 #include "aducpal/stdlib.h" // setenv
 
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 using Catch::Matchers::Equals;
 
 #include <sstream>

@@ -6,7 +6,7 @@
  * Licensed under the MIT License.
  */
 #include "aduc/https_proxy_utils.h"
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 
 using Catch::Matchers::Equals;
 

@@ -2,7 +2,7 @@
 #include "aduc/hash_utils.h"
 #include "aduc/parser_utils.h"
 #include <aduc/types/hash.h>
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 
 using Catch::Matchers::Equals;
 

@@ -8,7 +8,7 @@
 
 #include "aduc/source_update_cache_utils.h"
 
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 using Catch::Matchers::Equals;
 #include <aduc/aduc_inode.h> // ADUC_INODE_SENTINEL_VALUE
 #include <aduc/auto_dir.hpp> // aduc::AutoDir

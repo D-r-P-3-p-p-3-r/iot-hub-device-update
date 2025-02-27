@@ -5,13 +5,13 @@
  * @copyright Copyright (c) Microsoft Corporation.
  * Licensed under the MIT License.
  */
-#define CATCH_CONFIG_RUNNER
-#include <catch2/catch.hpp>
+#include <catch2/catch_session.hpp>
 
 // https://github.com/Azure/umock-c/blob/master/doc/umock_c.md
 #include <umock_c/umock_c.h>
 
 #include <ostream>
+#include <iostream>
 
 int main(int argc, char* argv[])
 {

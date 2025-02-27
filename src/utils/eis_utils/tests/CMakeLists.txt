@@ -19,7 +19,7 @@ target_link_libraries (
             aduc::c_utils
             aduc::eis_utils
             aduc::string_utils
-            Catch2::Catch2)
+            Catch2::Catch2WithMain)
 
 target_link_umock_c (${PROJECT_NAME} PRIVATE)
 target_link_aziotsharedutil (${PROJECT_NAME} PRIVATE)

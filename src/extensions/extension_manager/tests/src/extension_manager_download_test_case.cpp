@@ -18,7 +18,7 @@
 #include <aduc/workflow_utils.h>
 #include <aducpal/stdio.h> // remove
 #include <aducpal/unistd.h> // UNREFERENCED_PARAMETER
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 #include <fstream>
 #include <memory>
 #include <parson.h>

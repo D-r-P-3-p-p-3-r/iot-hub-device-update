@@ -7,7 +7,7 @@ include (agentRules)
 compileasc99 ()
 disablertti ()
 
-set (sources main.cpp simulator_handler_unit_tests.cpp ../src/simulator_handler.cpp)
+set (sources simulator_handler_unit_tests.cpp ../src/simulator_handler.cpp)
 
 find_package (Catch2 REQUIRED)
 find_package (IotHubClient REQUIRED)
@@ -33,7 +33,8 @@ target_link_libraries (
             aduc::system_utils
             aduc::workflow_data_utils
             aduc::workflow_utils
-            Parson::parson)
+            Parson::parson
+            Catch2::Catch2WithMain)
 
 # Windows needs all EXEs to have links to all potential libraries so this is included here
 if (WIN32)

@@ -8,7 +8,7 @@ compileasc99 ()
 disablertti ()
 
 set (sources
-     main.cpp swupdate_handler_v2_ut.cpp ../src/handler_create.cpp ../src/swupdate_handler_v2.cpp
+     swupdate_handler_v2_ut.cpp ../src/handler_create.cpp ../src/swupdate_handler_v2.cpp
      ../../../update_manifest_handlers/steps_handler/src/steps_handler.cpp)
 
 find_package (Catch2 REQUIRED)
@@ -43,7 +43,7 @@ target_link_libraries (
             aduc::system_utils
             aduc::workflow_data_utils
             aduc::workflow_utils
-            Catch2::Catch2)
+            Catch2::Catch2WithMain)
 
 target_link_libraries (${PROJECT_NAME} PRIVATE libaducpal)
 

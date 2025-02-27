@@ -8,7 +8,7 @@
 
 #include "aduc/apt_parser.hpp"
 
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 using Catch::Matchers::Equals;
 
 #include <sstream>

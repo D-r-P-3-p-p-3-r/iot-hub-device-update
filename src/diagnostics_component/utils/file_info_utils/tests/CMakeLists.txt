@@ -7,7 +7,7 @@ include (agentRules)
 compileasc99 ()
 disablertti ()
 
-set (sources main.cpp file_info_utils_ut.cpp)
+set (sources file_info_utils_ut.cpp)
 
 find_package (Catch2 REQUIRED)
 
@@ -22,7 +22,7 @@ endif ()
 
 target_link_libraries (
     ${PROJECT_NAME} PRIVATE aduc::jws_utils aduc::crypto_utils aduc::string_utils
-                            diagnostic_utils::file_info_utils Catch2::Catch2)
+                            diagnostic_utils::file_info_utils Catch2::Catch2WithMain)
 
 include (CTest)
 include (Catch)

@@ -9,7 +9,7 @@
 
 #include "aduc/system_utils.h" // ADUC_SystemUtils_MkTemp
 
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 using Catch::Matchers::Equals;
 
 #include <aduc/calloc_wrapper.hpp>

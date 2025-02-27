@@ -4,7 +4,7 @@
 #include "aduc/d2c_messaging.h"
 #include "aduc/retry_utils.h"
 
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 #include <stdexcept> // runtime_error
 #include <string.h>
 
@@ -330,7 +330,7 @@ static void OnMessageProcessCompleted_SaveStatus_And_Signal(void* context, ADUC_
 };
 
 // Make sure that we can deinitialize cleanly while there's a message in-progress.
-TEST_CASE("Deinitialization - in progress message", "[.][functional]")
+TEST_CASE("Deinitialization - in progress message", "[.hide][functional]")
 {
     g_testCaseSyncMutex.lock();
 
@@ -393,7 +393,7 @@ TEST_CASE("Deinitialization - in progress message", "[.][functional]")
 }
 
 // Make sure that we can deinitialize cleanly.
-TEST_CASE("Deinitialization - pending message", "[.][functional]")
+TEST_CASE("Deinitialization - pending message", "[.hide][functional]")
 {
     g_testCaseSyncMutex.lock();
 
@@ -441,7 +441,7 @@ TEST_CASE("Deinitialization - pending message", "[.][functional]")
     g_testCaseSyncMutex.unlock();
 }
 
-TEST_CASE("Simple tests", "[.][functional]")
+TEST_CASE("Simple tests", "[.hide][functional]")
 {
     g_testCaseSyncMutex.lock();
 

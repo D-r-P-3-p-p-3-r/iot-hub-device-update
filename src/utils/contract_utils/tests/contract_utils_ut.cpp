@@ -8,7 +8,7 @@
 
 #include "aduc/contract_utils.h"
 
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 
 TEST_CASE("ADUC_ContractUtils_IsV1Contract")
 {

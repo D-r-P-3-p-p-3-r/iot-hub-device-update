@@ -7,7 +7,7 @@ include (agentRules)
 compileasc99 ()
 disablertti ()
 
-set (sources main.cpp jws_utils_ut.cpp)
+set (sources jws_utils_ut.cpp)
 
 find_package (Catch2 REQUIRED)
 find_package (OpenSSL REQUIRED)
@@ -27,7 +27,7 @@ target_link_libraries (
             aduc::rootkeypackage_utils
             aduc::string_utils
             aduc::system_utils
-            Catch2::Catch2
+            Catch2::Catch2WithMain
             OpenSSL::Crypto)
 
 include (CTest)

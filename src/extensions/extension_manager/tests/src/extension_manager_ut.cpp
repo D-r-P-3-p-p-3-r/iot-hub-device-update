@@ -6,7 +6,7 @@
  * Licensed under the MIT License.
  */
 #include <aduc/result.h>
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 #include <extension_manager_download_test_case.hpp>
 
 bool operator==(ADUC_Result a, ADUC_Result b)

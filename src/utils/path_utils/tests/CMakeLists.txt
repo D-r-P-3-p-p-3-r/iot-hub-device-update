@@ -11,11 +11,11 @@ find_package (Catch2 REQUIRED)
 
 add_executable (${PROJECT_NAME} "")
 
-target_sources (${PROJECT_NAME} PRIVATE main.cpp path_utils_ut.cpp)
+target_sources (${PROJECT_NAME} PRIVATE path_utils_ut.cpp)
 
 target_link_aziotsharedutil (${PROJECT_NAME} PRIVATE)
 
-target_link_libraries (${PROJECT_NAME} PRIVATE aduc::path_utils aduc::string_utils Catch2::Catch2)
+target_link_libraries (${PROJECT_NAME} PRIVATE aduc::path_utils aduc::string_utils Catch2::Catch2WithMain)
 
 include (CTest)
 include (Catch)

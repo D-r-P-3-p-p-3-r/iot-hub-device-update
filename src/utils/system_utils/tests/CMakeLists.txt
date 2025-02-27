@@ -7,14 +7,14 @@ include (agentRules)
 compileasc99 ()
 disablertti ()
 
-set (sources main.cpp system_utils_ut.cpp)
+set (sources system_utils_ut.cpp)
 
 find_package (Catch2 REQUIRED)
 
 add_executable (${PROJECT_NAME} ${sources})
 
 target_link_libraries (${PROJECT_NAME} PRIVATE aduc::file_utils aduc::string_utils
-                                               aduc::system_utils Catch2::Catch2)
+                                               aduc::system_utils Catch2::Catch2WithMain)
 
 target_link_libraries (${PROJECT_NAME} PRIVATE libaducpal)
 

@@ -7,7 +7,7 @@ include (agentRules)
 compileasc99 ()
 disablertti ()
 
-set (sources main.cpp download_ut.cpp mock_do_download.cpp)
+set (sources download_ut.cpp mock_do_download.cpp)
 
 add_executable (${PROJECT_NAME} ${sources})
 
@@ -33,7 +33,7 @@ target_link_libraries (
             aduc::exception_utils
             aduc::c_utils
             atomic
-            Catch2::Catch2
+            Catch2::Catch2WithMain
             libaducpal)
 
 include (CTest)

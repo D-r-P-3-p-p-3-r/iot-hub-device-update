@@ -18,7 +18,7 @@
 #include "root_key_util.h"
 #include <aduc/calloc_wrapper.hpp>
 #include <aduc/result.h>
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 #include <cstring>
 #include <iostream>
 #include <parson.h>

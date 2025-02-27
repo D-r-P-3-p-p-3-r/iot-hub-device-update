@@ -8,7 +8,7 @@
 
 #include "umock_c/umock_c.h"
 
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 
 #include <aduc/c_utils.h>
 #include <aduc/calloc_wrapper.hpp>
